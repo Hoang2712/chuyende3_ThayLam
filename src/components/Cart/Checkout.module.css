@@ -1,0 +1,75 @@
+.form {
+  height: 19rem;
+  overflow: auto;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.control input {
+  font: inherit;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  border-radius: 4px;
+  width: 100%;
+  height: 2rem;
+  background-color: rgb(228, 228, 228);
+  max-width: 100%;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.actions button {
+  font: inherit;
+  color: var(--color-main);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 2rem; 
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #ffe6dc;
+}
+
+.actions .submit {
+  border: 1px solid var(--color-main);
+  background-color: var(--color-main);
+  color: white;
+}
+
+.actions .cancel {
+  border: 1px solid var(--color-main);
+  color: rgb(0, 0, 0);
+}
+
+.actions .cancel:hover{
+  background-color: #ff190059;
+}
+
+.actions .submit:hover,
+.actions .submit:active {
+  background-color: var(--color-main);
+}
+
+.invalid label {
+  color: var(--color-main);
+}
+
+.invalid input {
+  border-color: gray;
+  background-color: #f62008;
+}
